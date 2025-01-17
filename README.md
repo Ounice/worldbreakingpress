@@ -1,28 +1,61 @@
 # World Breaking Press
 
-Site d'actualités international spécialisé dans la finance, le forex et les cryptomonnaies.
+Site d'actualités internationales, finance, forex et crypto.
 
-## 🌐 Site Web
-https://worldbreakingpress.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/sites/worldbreakingpress/deploys)
 
-## 📱 Fonctionnalités
+## Démo
+[https://worldbreakingpress.netlify.app](https://worldbreakingpress.netlify.app)
 
-- Actualités internationales en temps réel
-- Analyses financières approfondies
-- Suivi des marchés Forex
-- Actualités et analyses crypto
-- Design responsive
-- Performance optimisée
+## Structure du Site
 
-## 🛠️ Technologies
+```
+news_website/
+├── index.html          # Page d'accueil
+├── articles/           # Articles par catégorie
+│   ├── finance/
+│   ├── crypto/
+│   ├── forex/
+│   └── international/
+├── css/               # Styles
+│   ├── style.css
+│   └── article.css
+├── js/               # Scripts
+│   ├── analytics.js
+│   └── adsense.js
+├── images/           # Images et médias
+└── assets/          # Autres ressources
+```
 
-- HTML5/CSS3
+## Technologies Utilisées
+
+- HTML5
+- CSS3
 - JavaScript
-- Bootstrap 5
-- Netlify (Hébergement & CI/CD)
+- Google Analytics
+- Google AdSense
 
-## 📂 Structure du Site
-worldbreakingpress/ ├── index.html ├── articles/ │ ├── finance/ │ ├── forex/ │ └── crypto/ ├── css/ ├── js/ └── images/
+## Déploiement
 
-## 📝 Licence
-© 2025 World Breaking Press. Tous droits réservés.
+Le site est déployé sur Netlify avec intégration continue via GitHub.
+
+## Installation
+
+1. Cloner le repository
+```bash
+git clone https://github.com/Ounice/worldbreakingpress.git
+```
+
+2. Ouvrir index.html dans votre navigateur
+
+## Contribution
+
+1. Fork le projet
+2. Créer une branche (`git checkout -b feature/nouvelle-fonctionnalite`)
+3. Commit vos changements (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`)
+4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
+5. Ouvrir une Pull Request
+
+## Licence
+
+Ce projet est sous licence MIT.

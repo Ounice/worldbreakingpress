@@ -1,0 +1,24 @@
+# Force HTTPS
+http://* https://:splat 301!
+
+# Redirection www vers non-www
+https://www.worldbreakingpress.com/* https://worldbreakingpress.com/:splat 301!
+
+# Redirections principales
+/news/*      /articles/news/:splat      200
+/finance/*   /articles/finance/:splat   200
+/forex/*     /articles/forex/:splat     200
+/crypto/*    /articles/crypto/:splat    200
+
+# Redirections alternatives
+/actualites/* /news/:splat 301
+/marches/*   /finance/:splat 301
+/devises/*   /forex/:splat 301
+
+# Protection des fichiers sensibles
+/.env     /404.html 404
+/.git/*   /404.html 404
+/.config/* /404.html 404
+
+# Gestion des erreurs
+/*  /index.html  200

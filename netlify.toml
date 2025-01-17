@@ -1,0 +1,53 @@
+[build]
+  publish = "/"
+  command = ""
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Redirections
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de sécurité
+[[headers]]
+  for = "/*"
+    [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Content-Security-Policy = "default-src 'self' https: 'unsafe-inline' 'unsafe-eval' data:; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:; frame-src 'self' https: *.google.com *.netlify.app;"
+
+# Cache Control
+[[headers]]
+  for = "/*.js"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.css"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/images/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
