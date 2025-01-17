@@ -22,3 +22,7 @@ https://worldbreakingpress.com
 - Netlify (Hébergement & CI/CD)
 
 ## 📂 Structure du Site
+worldbreakingpress/ ├── index.html ├── articles/ │ ├── finance/ │ ├── forex/ │ └── crypto/ ├── css/ ├── js/ └── images/
+
+## 📝 Licence
+© 2025 World Breaking Press. Tous droits réservés.
