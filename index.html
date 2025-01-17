@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Breaking Press - International News, Finance, Forex & Crypto</title>
-    <meta name="description" content="Latest breaking news in international affairs, finance, forex trading, and cryptocurrency markets. Stay informed with real-time updates and expert analysis.">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script src="js/analytics.js"></script>
-    
+    <title>World Breaking Press - L'actualité qui façonne demain</title>
+    <meta name="description" content="Découvrez les dernières actualités Tech, Business, Lifestyle et plus. Analyses approfondies, tendances et innovations qui façonnent notre futur.">
+    <meta name="keywords" content="tech, innovation, business, crypto, lifestyle, développement durable, culture numérique">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/premium.css">
+    <script async src="/js/analytics.js"></script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ID"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="sticky-top">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="/">World Breaking Press</a>
@@ -26,157 +23,294 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/international">International</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tech & Innovation</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/tech/ai">Intelligence Artificielle</a></li>
+                                <li><a class="dropdown-item" href="/tech/startups">Startups</a></li>
+                                <li><a class="dropdown-item" href="/tech/cybersecurity">Cybersécurité</a></li>
+                                <li><a class="dropdown-item" href="/tech/web3">Web3 & Metaverse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Business & Finance</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/business/markets">Marchés</a></li>
+                                <li><a class="dropdown-item" href="/business/crypto">Crypto</a></li>
+                                <li><a class="dropdown-item" href="/business/realestate">Immobilier</a></li>
+                                <li><a class="dropdown-item" href="/business/success">Success Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Lifestyle</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/lifestyle/health">Santé & Bien-être</a></li>
+                                <li><a class="dropdown-item" href="/lifestyle/personal-dev">Développement Personnel</a></li>
+                                <li><a class="dropdown-item" href="/lifestyle/luxury">Mode & Luxe</a></li>
+                                <li><a class="dropdown-item" href="/lifestyle/travel">Voyage</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Environnement</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/environment/energy">Énergies Renouvelables</a></li>
+                                <li><a class="dropdown-item" href="/environment/climate">Climat</a></li>
+                                <li><a class="dropdown-item" href="/environment/mobility">Mobilité Électrique</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Culture & Gaming</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/culture/gaming">Gaming & eSports</a></li>
+                                <li><a class="dropdown-item" href="/culture/streaming">Streaming & VOD</a></li>
+                                <li><a class="dropdown-item" href="/culture/social">Réseaux Sociaux</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/finance">Finance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/forex">Forex</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/crypto">Crypto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/markets">Markets</a>
+                            <a class="nav-link premium-link" href="/premium">Premium</a>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search news...">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Rechercher...">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Breaking News Ticker -->
-    <div class="breaking-news-ticker bg-danger text-white py-2">
+    <div class="breaking-news py-2 bg-primary text-white">
         <div class="container">
             <div class="d-flex align-items-center">
-                <span class="badge bg-white text-danger me-2">BREAKING</span>
-                <div class="ticker-wrapper">
-                    <!-- This will be populated by JavaScript -->
-                </div>
+                <span class="badge bg-white text-primary me-2">TRENDING</span>
+                <marquee>ChatGPT-5 révolutionne l'IA • Bitcoin atteint 100,000$ • Tesla dévoile sa nouvelle innovation • Le Metaverse transforme le gaming</marquee>
             </div>
         </div>
     </div>
 
-    <!-- Main Content -->
+    <div id="div-gpt-ad-top" class="ad-container ad-top"></div>
+
     <main class="container my-4">
-        <!-- Featured News Section -->
-        <section class="featured-news mb-4">
-            <div class="row">
-                <div class="col-lg-8">
-                    <!-- Main Featured Article -->
-                    <article class="featured-article position-relative">
-                        <img src="https://via.placeholder.com/800x400" class="img-fluid" alt="Featured News">
-                        <div class="article-overlay">
-                            <span class="badge bg-primary">International</span>
-                            <h2>Featured Breaking News Headline</h2>
-                            <p>Brief description of the featured news story goes here...</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <!-- AdSense Ad Slot -->
-                    <div class="ad-container mb-3">
-                        <!-- AdSense code will go here -->
+        <!-- Featured Article -->
+        <section class="featured-article mb-4">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="IA Innovation">
                     </div>
-                    <!-- Trending Stories -->
-                    <div class="trending-stories">
-                        <h4>Trending Now</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <span class="badge bg-danger">1</span>
-                                <a href="#">Trending story headline goes here</a>
-                            </li>
-                            <!-- More trending stories -->
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <span class="category-tag mb-2">Tech & Innovation</span>
+                            <h2 class="card-title">ChatGPT-5 : L'IA qui révolutionne notre quotidien</h2>
+                            <p class="card-text">Découvrez comment la dernière version de ChatGPT transforme les entreprises et notre façon de travailler en 2025.</p>
+                            <a href="/tech/ai/chatgpt-5-revolution" class="btn btn-primary">Lire plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- News Categories -->
-        <section class="news-categories">
+        <!-- Latest News Grid -->
+        <section class="latest-news mb-4">
+            <h2 class="section-title mb-3">Tendances</h2>
             <div class="row">
-                <!-- Finance News -->
-                <div class="col-md-6 mb-4">
-                    <h3>Finance <i class="fas fa-chart-line"></i></h3>
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Crypto news">
                         <div class="card-body">
-                            <!-- News items will go here -->
+                            <span class="category-tag mb-2">Business & Finance</span>
+                            <h3 class="card-title h5">Bitcoin à 100,000$ : Les experts analysent</h3>
+                            <p class="card-text">Le Bitcoin atteint des sommets historiques. Analyse et perspectives.</p>
+                            <a href="/business/crypto/bitcoin-100k" class="btn btn-outline-primary">Lire plus</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Forex News -->
-                <div class="col-md-6 mb-4">
-                    <h3>Forex <i class="fas fa-dollar-sign"></i></h3>
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Lifestyle news">
                         <div class="card-body">
-                            <!-- News items will go here -->
+                            <span class="category-tag mb-2">Lifestyle</span>
+                            <h3 class="card-title h5">Digital Detox : Retrouver l'équilibre</h3>
+                            <p class="card-text">Guide complet pour une vie équilibrée à l'ère numérique.</p>
+                            <a href="/lifestyle/personal-dev/digital-detox" class="btn btn-outline-primary">Lire plus</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Crypto News -->
-                <div class="col-md-6 mb-4">
-                    <h3>Cryptocurrency <i class="fab fa-bitcoin"></i></h3>
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Gaming news">
                         <div class="card-body">
-                            <!-- News items will go here -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Markets Overview -->
-                <div class="col-md-6 mb-4">
-                    <h3>Markets <i class="fas fa-globe"></i></h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- Market data will go here -->
+                            <span class="category-tag mb-2">Culture & Gaming</span>
+                            <h3 class="card-title h5">eSports : La nouvelle ère du sport</h3>
+                            <p class="card-text">Comment l'eSport devient un phénomène culturel majeur.</p>
+                            <a href="/culture/gaming/esports-evolution" class="btn btn-outline-primary">Lire plus</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-md-8">
+                <!-- Premium Content Preview -->
+                <section class="premium-content mb-4">
+                    <h2 class="section-title mb-3">Articles Premium</h2>
+                    <div class="card premium-card">
+                        <div class="card-body">
+                            <span class="badge bg-gold mb-2">PREMIUM</span>
+                            <h3>Guide Exclusif : Investir dans l'IA en 2025</h3>
+                            <p>Analyse approfondie des meilleures opportunités d'investissement dans le secteur de l'IA.</p>
+                            <a href="/premium/ai-investment-guide" class="btn btn-gold">Accéder au Premium</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest Articles -->
+                <section class="latest-articles mb-4">
+                    <h2 class="section-title mb-3">Derniers Articles</h2>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Tesla révolutionne la conduite autonome</h5>
+                                <small>Il y a 2 heures</small>
+                            </div>
+                            <p class="mb-1">Nouvelle technologie de conduite autonome niveau 5.</p>
+                            <small class="text-muted">Tech & Innovation</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Le Metaverse transforme l'éducation</h5>
+                                <small>Il y a 4 heures</small>
+                            </div>
+                            <p class="mb-1">Comment la réalité virtuelle révolutionne l'apprentissage.</p>
+                            <small class="text-muted">Tech & Innovation</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Énergies vertes : Percée majeure</h5>
+                                <small>Il y a 6 heures</small>
+                            </div>
+                            <p class="mb-1">Nouvelle technologie de stockage d'énergie.</p>
+                            <small class="text-muted">Environnement</small>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Ad Space -->
+                <div class="ad-container mb-4">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-YOUR_ID"
+                         data-ad-slot="YOUR_SLOT_ID"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!-- Trending Topics -->
+                <section class="trending-topics mb-4">
+                    <h2 class="section-title mb-3">Sujets Tendance</h2>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Intelligence Artificielle
+                            <span class="badge bg-primary rounded-pill">14</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Cryptomonnaies
+                            <span class="badge bg-primary rounded-pill">8</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Développement Personnel
+                            <span class="badge bg-primary rounded-pill">6</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Newsletter Signup -->
+                <section class="newsletter-form">
+                    <h3>Newsletter</h3>
+                    <p>Recevez nos meilleures analyses chaque semaine</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">S'abonner</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <div id="div-gpt-ad-footer" class="ad-container ad-footer"></div>
+    <div id="div-gpt-ad-mobile" class="ad-container ad-mobile"></div>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/premium-monetization.js"></script>
+    <script src="js/ad-optimization.js"></script>
+    <script src="js/advanced-analytics.js"></script>
+
+    <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>About World Breaking Press</h5>
-                    <p>Your trusted source for international news, finance, forex, and cryptocurrency updates.</p>
+                <div class="col-md-3">
+                    <h5>À propos</h5>
+                    <p>World Breaking Press : L'information qui façonne demain.</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
+                <div class="col-md-3">
+                    <h5>Catégories</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/about" class="text-white">About Us</a></li>
-                        <li><a href="/contact" class="text-white">Contact</a></li>
-                        <li><a href="/privacy" class="text-white">Privacy Policy</a></li>
-                        <li><a href="/terms" class="text-white">Terms of Service</a></li>
+                        <li><a href="/tech">Tech & Innovation</a></li>
+                        <li><a href="/business">Business & Finance</a></li>
+                        <li><a href="/lifestyle">Lifestyle</a></li>
+                        <li><a href="/environment">Environnement</a></li>
+                        <li><a href="/culture">Culture & Gaming</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
+                <div class="col-md-3">
+                    <h5>Premium</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/premium">Abonnement Premium</a></li>
+                        <li><a href="/premium/analysis">Analyses Exclusives</a></li>
+                        <li><a href="/premium/reports">Rapports Spéciaux</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Suivez-nous</h5>
                     <div class="social-links">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
+                        <a href="https://twitter.com/worldbreakingp" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/worldbreakingpress" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/worldbreakingpress" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/worldbreakingpress"><i class="fab fa-telegram"></i></a>
                     </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>&copy; 2025 World Breaking Press. Tous droits réservés.</small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small>
+                        <a href="/privacy">Politique de confidentialité</a> |
+                        <a href="/terms">Conditions d'utilisation</a> |
+                        <a href="/contact">Contact</a>
+                    </small>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
