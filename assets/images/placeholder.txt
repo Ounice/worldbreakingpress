@@ -1,0 +1,23 @@
+Pour les images, utilisez ces URLs de placeholder en attendant vos vraies images :
+
+1. chatgpt-5.jpg :
+https://via.placeholder.com/800x400?text=ChatGPT-5+AI+Innovation
+
+2. bitcoin.jpg :
+https://via.placeholder.com/800x400?text=Bitcoin+Analysis
+
+3. digital-detox.jpg :
+https://via.placeholder.com/800x400?text=Digital+Detox
+
+4. esports.jpg :
+https://via.placeholder.com/800x400?text=eSports+Gaming
+
+5. mindfulness.jpg :
+https://via.placeholder.com/800x400?text=Mindfulness
+
+Instructions pour les images :
+- Taille recommandée : 800x400 pixels
+- Format : JPG
+- Optimisez les images pour le web (compression)
+- Ajoutez des attributs alt descriptifs
+- Utilisez des noms de fichiers explicites
